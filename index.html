@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name — Personal Profile</title>
+    <meta name="description" content="Personal website for Your Name — summary, experience, projects, and contact." />
+    <meta property="og:title" content="Your Name — Personal Profile" />
+    <meta property="og:description" content="Personal website for Your Name — summary, experience, projects, and contact." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mayad123.github.io/" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Your Name",
+      "url": "https://mayad123.github.io/",
+      "sameAs": [
+        "https://github.com/mayad123",
+        "https://www.linkedin.com/in/YOUR_LINKEDIN/"
+      ],
+      "jobTitle": "Your Title",
+      "worksFor": { "@type": "Organization", "name": "Your Company or Freelance" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Your City",
+        "addressRegion": "Your Region",
+        "addressCountry": "Your Country"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="./" aria-label="Home">Your Name</a>
+        </div>
+        <nav class="nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">☾</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container">
+          <h1>Hi, I’m <span class="accent">Your Name</span>.</h1>
+          <p class="lead">Your Title • Your Location</p>
+          <p class="muted">Brief two‑sentence summary of who you are, what you’re great at, and what roles you’re targeting. Keep it crisp and focused on impact.</p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="mailto:your.email@example.com">Email Me</a>
+            <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+          </div>
+          <div class="social">
+            <a href="https://github.com/mayad123" aria-label="GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/" aria-label="LinkedIn">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            A little more detail about your background, strengths, domains, and what you’re looking for next. Highlight measurable outcomes, notable technologies, and areas of interest.
+          </p>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <h2>Experience</h2>
+          <ul class="timeline">
+            <li>
+              <div class="role">
+                <div>
+                  <strong>Job Title</strong> · Company Name
+                </div>
+                <div class="meta">YYYY–YYYY · Location</div>
+              </div>
+              <ul class="bullets">
+                <li>Achievement with metric (e.g., improved X by Y%).</li>
+                <li>Key responsibility using technologies A, B, C.</li>
+                <li>Ownership of important deliverables or systems.</li>
+              </ul>
+            </li>
+            <li>
+              <div class="role">
+                <div>
+                  <strong>Previous Title</strong> · Previous Company
+                </div>
+                <div class="meta">YYYY–YYYY · Location</div>
+              </div>
+              <ul class="bullets">
+                <li>Impactful work and outcomes.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Project Name</h3>
+              <p>One‑sentence description highlighting the user problem and result.</p>
+              <div class="tags">HTML • CSS • JS</div>
+              <div class="links">
+                <a href="https://github.com/mayad123/REPO" target="_blank" rel="noopener">Code</a>
+                <a href="https://example.com" target="_blank" rel="noopener">Live</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Another Project</h3>
+              <p>What it does, how it’s built, and the outcome.</p>
+              <div class="tags">Python • FastAPI • Docker</div>
+              <div class="links">
+                <a href="https://github.com/mayad123/REPO2" target="_blank" rel="noopener">Code</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            Interested in working together? Reach out via
+            <a href="mailto:your.email@example.com">email</a>
+            or connect on
+            <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/">LinkedIn</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>© <span id="year"></span> Your Name</span>
+        <span class="sep">•</span>
+        <a href="https://github.com/mayad123/mayad123.github.io">Source</a>
+      </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+  </body>
+  </html>
+
