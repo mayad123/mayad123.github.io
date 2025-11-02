@@ -1,39 +1,35 @@
-# Personal Profile Site
+# Portfolio Website — For Recruiters
 
-This repository contains a simple, fast, and accessible personal site you can deploy with GitHub Pages to showcase your background, experience, and projects.
+Live Site: https://mayad123.github.io/
 
-Live URL (after enabling GitHub Pages):
-- https://mayad123.github.io/
+This repository powers my personal site. It highlights my experience across MBSE, data/ETL, analytics, and applied ML.
 
-## Quick Start
+## For Recruiters
 
-1. Replace placeholder text in `index.html` with your details:
-   - Name, title, location, about blurb
-   - Experience roles with Skills sub-bullets (see below)
-   - Projects and tags
-   - Social links (GitHub, LinkedIn, email)
-2. Optionally add a resume PDF to the repo and update the resume link in `index.html`.
-3. Commit and push your changes.
-4. Enable GitHub Pages:
-   - Go to your repo on GitHub → Settings → Pages
-   - Source: Deploy from a branch
-   - Branch: `main` and folder: `/ (root)`
-   - Save. Your site will be available at the URL above.
+- Quick links: Live site (above), LinkedIn (in-site), Email (in-site)
+- Highlights:
+  - MBSE Solution Architect at Dassault Systèmes: SysML/UAF modeling, reliability assessment, ML-integrated architecture analytics
+  - Merck & Co. Vaccine Manufacturing: Power BI/Query/DAX/SQL dashboards; three production-ready analytics solutions
+  - Cornell Tech Research: BERT-based EHR de-identification; model monitoring and statistical evaluation in PyTorch
+- Core skills: Python, SQL, PyTorch, TensorFlow, Power BI/DAX, SysML/UAF, ETL/data engineering, NLP, uncertainty/sensitivity analysis
 
-## Customize
+If you need a PDF resume, the site can link to `resume.pdf` at the repo root. Add your PDF and update the link in `index.html` if needed.
 
-- Colors and spacing are defined in `assets/style.css` under CSS variables.
-- You can toggle light/dark theme from the UI; it’s stored in `localStorage`.
-- Replace the favicon in `assets/favicon.svg` if you want a custom icon.
+## Editing Content
+
+- Experience lives in `index.html` under `<section id="experience">`.
+- Each role keeps the job title and company header, followed by a “Skills” block with categorized sub-bullets.
+- Projects live under `<section id="projects">` with short descriptions and tags.
+- Global styles and colors: `assets/style.css`. Theme preference persists via `localStorage`.
 
 ## Local Preview
 
-Open `index.html` directly in a browser, or run a small local server:
+Open `index.html` directly, or run a local server:
 
-- Python: `python -m http.server` (visit http://localhost:8000)
+- Python: `python -m http.server` → http://localhost:8000
 - Node: `npx serve .` (requires Node.js)
 
-## Structure
+## Repo Structure
 
 ```
 ./
@@ -45,46 +41,7 @@ Open `index.html` directly in a browser, or run a small local server:
 └─ README.md
 ```
 
-## Experience + Skills
+## GitHub Pages
 
-The Experience section keeps job titles and company names as headings and lists a “Skills” block beneath each role with categorized sub-bullets.
-
-- Edit: `mayad123.github.io/index.html: <section id="experience">`
-- Add a new role by duplicating a `<li>` inside `<ul class="timeline">`.
-- Keep titles/companies in the `.role` header; customize the Skills categories per role.
-
-Example role entry:
-
-```
-<li>
-  <div class="role">
-    <div>
-      <strong>MBSE Solution Architect</strong> — Dassault Systèmes
-    </div>
-    <div class="meta">Jul 2024 — Present — Seattle, WA</div>
-  </div>
-  <p><strong>Skills</strong></p>
-  <ul class="bullets">
-    <li>Systems Modeling
-      <ul class="bullets">
-        <li>SysML, UAF for distributed architectures</li>
-        <li>Reliability assessment of structural/behavioral views</li>
-      </ul>
-    </li>
-    <li>Data &amp; ETL
-      <ul class="bullets">
-        <li>ETL pipelines extracting/transforming model data</li>
-        <li>Feature engineering for analytics</li>
-      </ul>
-    </li>
-  </ul>
-</li>
-```
-
-Styling: nested lists use the same `.bullets` class for consistent spacing and color. Adjust spacing in `assets/style.css` if you prefer deeper indentation.
-
-## Notes
-
-- For a user site (root domain), create a repo named `YOUR_USERNAME.github.io`. The site will be served at `https://YOUR_USERNAME.github.io/`.
-- No build step or dependencies are required; this is plain HTML/CSS/JS.
+Enable Pages in GitHub → Settings → Pages, then choose “Deploy from a branch”, branch `main`, folder `/ (root)`.
 
