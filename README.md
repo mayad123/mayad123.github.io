@@ -13,14 +13,7 @@ This repository powers my personal site. It highlights my experience across MBSE
   - Cornell Tech Research: BERT-based EHR de-identification; model monitoring and statistical evaluation in PyTorch
 - Core skills: Python, SQL, PyTorch, TensorFlow, Power BI/DAX, SysML/UAF, ETL/data engineering, NLP, uncertainty/sensitivity analysis
 
-If you need a PDF resume, the site can link to `resume.pdf` at the repo root. Add your PDF and update the link in `index.html` if needed.
-
-## Editing Content
-
-- Experience lives in `index.html` under `<section id="experience">`.
-- Each role keeps the job title and company header, followed by a “Skills” block with categorized sub-bullets.
-- Projects live under `<section id="projects">` with short descriptions and tags.
-- Global styles and colors: `assets/style.css`. Theme preference persists via `localStorage`.
+If you need a PDF resume, the site can link to `resume.pdf` at the repo root. 
 
 ## Local Preview
 
@@ -40,8 +33,4 @@ Open `index.html` directly, or run a local server:
 │  └─ favicon.svg
 └─ README.md
 ```
-
-## GitHub Pages
-
-Enable Pages in GitHub → Settings → Pages, then choose “Deploy from a branch”, branch `main`, folder `/ (root)`.
 
