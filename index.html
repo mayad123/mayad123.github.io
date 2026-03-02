@@ -54,7 +54,7 @@
       <section class="hero">
         <div class="container">
           <h1>Hi, I’m <span class="accent">Maya Devarajan</span>.</h1>
-          <p class="lead">MBSE Solution Architect and Sofwtare Associate • Seattle, WA</p>
+          <p class="lead">MBSE Software Architect • Seattle, WA</p>
           <p class="muted">I’m passionate about using data and machine learning to solve meaningful challenges and drive smarter decisions. I love working with curious, forward-thinking teams where technical depth meets creative problem-solving.</p>
           <div class="actions">
             <a class="btn primary" href="#projects">View Projects</a>
@@ -84,7 +84,7 @@
             <li>
               <div class="role">
                 <div>
-                  <strong>MBSE Soution Architect and Software Associate</strong> · Dassault Systèmes
+                  <strong>MBSE Software Architect</strong> · Dassault Systèmes
                 </div>
                 <div class="meta">2024–Current · Seattle, WA</div>
               </div>
@@ -187,43 +187,14 @@
           <h2>Projects</h2>
           <div class="grid">
             <article class="card">
-              <h3>ChatGPT Prompt Optimization Agent</h3>
-              <p>
-              An intelligent command-line and web-based agent that converts natural language text into optimized ChatGPT prompts. 
-              It applies OpenAI’s best practices for prompt engineering—assigning roles, structuring inputs, and defining clear output formats. 
-              The project demonstrates advanced prompt optimization logic and user-friendly web integration for real-time feedback.
-              </p>
-              <div class="tags">Python • FastAPI • HTML • JavaScript • Prompt Engineering</div>
-              <div class="links">
-                <a href="https://github.com/mayad123/chatgptpromptconversion" target="_blank" rel="noopener">Code</a>
-                <a href="https://mayad123.github.io/chatgptpromptconversion/" target="_blank" rel="noopener">Live</a>
-              </div>
-            </article>
-            <article class="card">
               <h3>Stock Value Forecast</h3>
               <p>
-              A fully functional stock forecasting web application that demonstrates modern front-end development skills. 
-              Features real-time news aggregation from 9+ sources, advanced NLP relevancy analysis, 
-              TensorFlow.js-powered ML predictions, multi-stock selection, and multiple forecast types including sentiment analysis, 
-              trend prediction, volatility forecast, and price projections.
+              Production-shaped ML pipeline for short-horizon stock trend forecasting: ingest (Alpha Vantage / optional news) → feature build (price-derived features with strict leakage checks) → train (Keras, versioned run records) → backtest (baselines vs model, walk-forward evaluation) → serve (FastAPI with /predict, /model_info). Emphasizes time-series correctness, reproducibility, and config-driven stages; includes a minimal Streamlit UI for exploration.
               </p>
-              <div class="tags">HTML5 • CSS3 • Vanilla JavaScript • TensorFlow.js • Chart.js • NLP • API Integration</div>
+              <div class="tags">Python • TensorFlow/Keras • FastAPI • Time-Series • CI/CD • Config-Driven Pipeline</div>
               <div class="links">
                 <a href="https://github.com/mayad123/stock-value-forecast" target="_blank" rel="noopener">Code</a>
-                <a href="https://mayad123.github.io/stock-value-forecast/" target="_blank" rel="noopener">Live</a>
-              </div>
-            </article>
-            <article class="card">
-              <h3>Cameo Opaque Expression Generator</h3>
-              <p>
-              A free web tool that helps create opaque expressions for Cameo Systems Modeler (MagicDraw) by describing requirements in plain English. 
-              Generates structured output with intent, metachain navigation paths, filters, and ready-to-use expression templates. 
-              Features natural language processing, visual expression tree visualization, and step-by-step instructions for complex model queries.
-              </p>
-              <div class="tags">JavaScript • HTML • CSS • Python • NLP • Netlify Functions</div>
-              <div class="links">
-                <a href="https://github.com/mayad123/opaqueExpressionChatBot" target="_blank" rel="noopener">Code</a>
-                <a href="https://mayad123.github.io/opaqueExpressionChatBot/" target="_blank" rel="noopener">Live</a>
+                <a href="https://stock-value-forecast-qneqzw3kpe5d69gjxmmete.streamlit.app/" target="_blank" rel="noopener">Live</a>
               </div>
             </article>
           </div>

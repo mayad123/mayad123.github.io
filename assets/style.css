@@ -84,8 +84,13 @@ a:hover { text-decoration: underline; }
 
 /* Projects */
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+#projects .grid { grid-template-columns: 1fr; }
 .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
-.card h3 { margin: 0 0 8px; }
+#projects .card { padding: 12px 20px; max-height: none; }
+#projects .card h3 { margin: 0 0 6px; }
+#projects .card p { margin: 0 0 8px; font-size: 15px; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+#projects .card .tags { color: var(--muted); font-size: 13px; margin: 0 0 6px; }
+#projects .card .links { margin: 0; }
 .tags { color: var(--muted); font-size: 14px; margin: 4px 0 8px; }
 .links a { margin-right: 12px; }
 
