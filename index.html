@@ -187,14 +187,13 @@
           <h2>Projects</h2>
           <div class="grid">
             <article class="card">
-              <h3>Stock Value Forecast</h3>
+              <h3>pdf-to-rag</h3>
               <p>
-              Production-shaped ML pipeline for short-horizon stock trend forecasting: ingest (Alpha Vantage / optional news) → feature build (price-derived features with strict leakage checks) → train (Keras, versioned run records) → backtest (baselines vs model, walk-forward evaluation) → serve (FastAPI with /predict, /model_info). Emphasizes time-series correctness, reproducibility, and config-driven stages; includes a minimal Streamlit UI for exploration.
+              Local-first RAG pipeline over PDF folders: PDF → text normalization → chunked passages with metadata → embeddings (Transformers.js / ONNX by default, optional Ollama) → versioned JSON/binary index → semantic query returning ranked verbatim excerpts with file name and page for citation. CLI, library, and MCP (stdio or HTTP) share the same application layer (ingest, query, inspect); GitHub Actions CI and layered architecture (commands, application, domain, pipeline modules).
               </p>
-              <div class="tags">Python • TensorFlow/Keras • FastAPI • Time-Series • CI/CD • Config-Driven Pipeline</div>
+              <div class="tags">Node.js • TypeScript • Transformers.js • RAG • MCP • CI</div>
               <div class="links">
-                <a href="https://github.com/mayad123/stock-value-forecast" target="_blank" rel="noopener">Code</a>
-                <a href="https://stock-value-forecast-qneqzw3kpe5d69gjxmmete.streamlit.app/" target="_blank" rel="noopener">Live</a>
+                <a href="https://github.com/mayad123/pdfToRagAI" target="_blank" rel="noopener">Code</a>
               </div>
             </article>
           </div>
