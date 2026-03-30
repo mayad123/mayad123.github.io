@@ -15,6 +15,10 @@ This repository powers my personal site. It highlights my experience across MBSE
 
 If you need a PDF resume, the site can link to `resume.pdf` at the repo root. 
 
+## Featured Project
+
+- CineMind (`movieAgent`) codebase: [https://github.com/mayad123/movieAgent](https://github.com/mayad123/movieAgent)
+
 ## Local Preview
 
 Open `index.html` directly, or run a local server:
