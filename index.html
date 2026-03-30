@@ -234,31 +234,15 @@
           <h2>Projects</h2>
           <div class="project-tabs" data-project-tabs>
             <div class="project-tablist" role="tablist" aria-label="Project selection">
-              <button class="project-tab is-active" id="tab-pdf" role="tab" aria-selected="true" aria-controls="panel-pdf" type="button">
-                pdf-to-rag
-              </button>
-              <button class="project-tab" id="tab-movie" role="tab" aria-selected="false" aria-controls="panel-movie" tabindex="-1" type="button">
+              <button class="project-tab is-active" id="tab-movie" role="tab" aria-selected="true" aria-controls="panel-movie" type="button">
                 CineMind (movieAgent)
+              </button>
+              <button class="project-tab" id="tab-pdf" role="tab" aria-selected="false" aria-controls="panel-pdf" tabindex="-1" type="button">
+                pdf-to-rag
               </button>
             </div>
 
-            <article class="card project-panel is-active" id="panel-pdf" role="tabpanel" aria-labelledby="tab-pdf">
-              <div class="project-media">
-                <img src="https://raw.githubusercontent.com/mayad123/pdfToRagAI/main/docs/assets/hero-web-ui.svg" alt="pdf-to-rag web interface preview" loading="lazy" />
-              </div>
-              <div class="project-content">
-                <h3>pdf-to-rag</h3>
-                <p>
-                Local-first RAG pipeline over PDF folders: PDF → text normalization → chunked passages with metadata → embeddings (Transformers.js / ONNX by default, optional Ollama) → versioned JSON/binary index → semantic query returning ranked verbatim excerpts with file name and page for citation. Includes an MCP server (stdio and HTTP) alongside CLI and library surfaces, all sharing the same application layer (ingest, query, inspect); GitHub Actions CI and layered architecture (commands, application, domain, pipeline modules).
-                </p>
-                <div class="tags">Node.js • TypeScript • Transformers.js • RAG • MCP • CI</div>
-                <div class="links">
-                  <a href="https://github.com/mayad123/pdfToRagAI" target="_blank" rel="noopener">Code</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="card project-panel" id="panel-movie" role="tabpanel" aria-labelledby="tab-movie" hidden>
+            <article class="card project-panel is-active" id="panel-movie" role="tabpanel" aria-labelledby="tab-movie">
               <div class="project-media">
                 <img src="https://raw.githubusercontent.com/mayad123/movieAgent/main/assets/ui-preview.svg" alt="CineMind movieAgent interface preview" loading="lazy" />
               </div>
@@ -270,6 +254,22 @@
                 <div class="tags">Python • FastAPI • RAG • Agentic Orchestration • Semantic Cache • CI</div>
                 <div class="links">
                   <a href="https://github.com/mayad123/movieAgent" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project-panel" id="panel-pdf" role="tabpanel" aria-labelledby="tab-pdf" hidden>
+              <div class="project-media">
+                <img src="https://raw.githubusercontent.com/mayad123/pdfToRagAI/main/docs/assets/hero-web-ui.svg" alt="pdf-to-rag web interface preview" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3>pdf-to-rag</h3>
+                <p>
+                Local-first RAG pipeline over PDF folders: PDF → text normalization → chunked passages with metadata → embeddings (Transformers.js / ONNX by default, optional Ollama) → versioned JSON/binary index → semantic query returning ranked verbatim excerpts with file name and page for citation. Includes an MCP server (stdio and HTTP) alongside CLI and library surfaces, all sharing the same application layer (ingest, query, inspect); GitHub Actions CI and layered architecture (commands, application, domain, pipeline modules).
+                </p>
+                <div class="tags">Node.js • TypeScript • Transformers.js • RAG • MCP • CI</div>
+                <div class="links">
+                  <a href="https://github.com/mayad123/pdfToRagAI" target="_blank" rel="noopener">Code</a>
                 </div>
               </div>
             </article>

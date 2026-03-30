@@ -19,22 +19,3 @@ If you need a PDF resume, the site can link to `resume.pdf` at the repo root.
 
 - CineMind (`movieAgent`) codebase: [https://github.com/mayad123/movieAgent](https://github.com/mayad123/movieAgent)
 
-## Local Preview
-
-Open `index.html` directly, or run a local server:
-
-- Python: `python -m http.server` → http://localhost:8000
-- Node: `npx serve .` (requires Node.js)
-
-## Repo Structure
-
-```
-./
-├─ index.html
-├─ assets/
-│  ├─ style.css
-│  ├─ script.js
-│  └─ favicon.svg
-└─ README.md
-```
-
