@@ -93,22 +93,22 @@
                 </summary>
                 <p><strong>Skills</strong></p>
                 <ul class="bullets">
-                  <li>Systems Modeling
+                  <li>Product Architecture
                     <ul class="bullets">
-                      <li>SysML and UAF for complex, distributed architectures</li>
-                      <li>Reliability assessment across structural and behavioral views</li>
+                      <li>Define and maintain product architecture across structural, behavioral, and requirements views</li>
+                      <li>Translate stakeholder needs into traceable system designs using MBSE processes and tooling</li>
+                    </ul>
+                  </li>
+                  <li>MBSE Processes
+                    <ul class="bullets">
+                      <li>Establish and govern modeling workflows, standards, and review processes across teams</li>
+                      <li>Drive consistency in how architecture artifacts are authored, versioned, and validated</li>
                     </ul>
                   </li>
                   <li>Data &amp; ETL
                     <ul class="bullets">
                       <li>ETL pipelines to extract, transform, and load engineering models</li>
                       <li>Feature engineering from architecture artifacts for analytics</li>
-                    </ul>
-                  </li>
-                  <li>ML Integration
-                    <ul class="bullets">
-                      <li>Interface predictive ML models with architecture frameworks</li>
-                      <li>Automated ingestion and real-time decision dashboards</li>
                     </ul>
                   </li>
                   <li>Analytics Methods
@@ -119,7 +119,7 @@
                   </li>
                   <li>Tools &amp; Languages
                     <ul class="bullets">
-                      <li>Python, SQL; PyTorch/TensorFlow; Web services</li>
+                      <li>Python, SQL; PyTorch; Web services</li>
                     </ul>
                   </li>
                 </ul>
@@ -234,7 +234,10 @@
           <h2>Projects</h2>
           <div class="project-tabs" data-project-tabs>
             <div class="project-tablist" role="tablist" aria-label="Project selection">
-              <button class="project-tab is-active" id="tab-movie" role="tab" aria-selected="true" aria-controls="panel-movie" type="button">
+              <button class="project-tab is-active" id="tab-medical" role="tab" aria-selected="true" aria-controls="panel-medical" type="button">
+                Clinical Reasoning Sandbox
+              </button>
+              <button class="project-tab" id="tab-movie" role="tab" aria-selected="false" aria-controls="panel-movie" tabindex="-1" type="button">
                 CineMind (movieAgent)
               </button>
               <button class="project-tab" id="tab-pdf" role="tab" aria-selected="false" aria-controls="panel-pdf" tabindex="-1" type="button">
@@ -242,7 +245,23 @@
               </button>
             </div>
 
-            <article class="card project-panel is-active" id="panel-movie" role="tabpanel" aria-labelledby="tab-movie">
+            <article class="card project-panel is-active" id="panel-medical" role="tabpanel" aria-labelledby="tab-medical">
+              <div class="project-media">
+                <img src="https://raw.githubusercontent.com/mayad123/Medical-Agent/main/assets/agent-architecture.svg" alt="Clinical Reasoning Sandbox agent architecture diagram" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3>Clinical Reasoning Sandbox</h3>
+                <p>
+                  Multi-agent LLM orchestration pipeline for clinical case reasoning: structured intake → differential diagnosis → parallel evidence and risk assessment → management planning → critic safety layer (PASS / REVISE / BLOCK) → narrative synthesis. Features a React + ReactFlow UI with real-time SSE streaming, an interactive workflow graph, and an inspector panel for artifact trace export. Runs fully local via Ollama.
+                </p>
+                <div class="tags">Python • FastAPI • React • TypeScript • Ollama • asyncio • SSE • ReactFlow</div>
+                <div class="links">
+                  <a href="https://github.com/mayad123/Medical-Agent" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project-panel" id="panel-movie" role="tabpanel" aria-labelledby="tab-movie" hidden>
               <div class="project-media">
                 <img src="https://raw.githubusercontent.com/mayad123/movieAgent/main/assets/ui-preview.svg" alt="CineMind movieAgent interface preview" loading="lazy" />
               </div>
